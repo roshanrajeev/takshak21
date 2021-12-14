@@ -1121,6 +1121,13 @@ body {
     display: block;
     margin:auto;
     margin-top:150px;
+    box-shadow:white;
+    
+}
+.hero-content button{
+    display: block;
+    margin:auto;
+
 }
 
 .hero-content .entry-header {
@@ -2591,4 +2598,14 @@ color: white;
   to {
     transform: translateY(-2000px);
   }
+}
+
+
+.btn-outline-warning{
+    background-color: transparent;
+    border-color: orange;
+    color:white;
+}
+.btn-outline-warning:hover{
+    background-color: orange;
 }
