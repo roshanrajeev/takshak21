@@ -2470,6 +2470,30 @@ body {
     border-style: solid none solid solid;
     padding: 10px;
 }
+.about_area .about_info p:hover{
+    animate: animate 2s forwards;
+}
+@keyframes animate{
+    0%{
+        border-top-color: white;
+         border-left-color: transparent;
+          border-bottom-color: transparent;
+    }
+    50%{
+        
+        border-top-color: transparent;
+         border-left-color: white;
+          border-bottom-color: transparent;
+    
+    }
+    100%{
+        
+        border-top-color: transparent;
+         border-left-color: transparent;
+          border-bottom-color: white;
+    
+    }
+}
 @media (max-width: 767px) {
     .about_area .about_info p {
         margin-bottom: 30px;
