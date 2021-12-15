@@ -1116,21 +1116,14 @@ body {
     background-size: cover;
 }
 .hero-content img{
-   height:40vh;
-   width:40vw;
+   height: 60vh;
+   width:60vw;
     display: block;
     margin:auto;
     margin-top:150px;
     box-shadow:white;
     
 }
-@media screen and (max-width:992px) {
-    .hero-content img{
-
-    }
-}
-
-
 .hero-content button{
     display: block;
     margin:auto;
@@ -1207,7 +1200,7 @@ body {
     color: hsl(0, 0%, 0%);
 }
 .content-section {
-    height: 100%;
+    min-height:100%;
     width: 100%;
     padding-bottom: 120px;
     /* background: url(images/middle-cover.jpg) no-repeat; */
@@ -1234,7 +1227,7 @@ body {
     width: 100%;
     font-size: 48px;
     font-weight: 600;
-    color: white;
+    color: hsl(0, 0%, 0%);
 }
 .lineup-artists {
     padding-top: 80px;
@@ -1563,10 +1556,12 @@ body {
 .home-page-last-news-wrap .entry-content .entry-meta span {
     margin-right: 10px;
 }
+/*****************************************Footer********************************/
 .site-footer {
     position: relative;
     padding: 40px 0 30px;
-    background: url(images/xfooter-cover.jpg.pagespeed.ic.bUq1sfau2M.jpg) no-repeat;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(249,70,0,0.969625350140056) 100%, rgba(0,212,255,1) 100%);
     background-size: cover;
 }
 .site-footer::before {
@@ -1583,7 +1578,7 @@ body {
     min-height: 480px;
     width: 100%}
 .site-footer .footer-cover-title h2 {
-    font-size: 20vw;
+    font-size: 16vw;
     font-weight: 700;
     line-height: 1;
     margin-bottom: 0;
@@ -1632,8 +1627,9 @@ body {
 }
 .footer-content-wrapper .copyright-info {
     margin-top: 20px;
-    font-size: 12px;
+    font-size: 14px;
     color: hsl(0, 0%, 100%);
+    font-family: 'Roboto Slab', serif;
 }
 .footer-content-wrapper .footer-social {
     margin-top: 32px;
@@ -1648,8 +1644,14 @@ body {
 }
 .footer-content-wrapper .footer-social ul a {
     padding: 5px 16px;
-    font-size: 12px;
+    font-size: 20px;
     color: hsl(0, 0%, 100%);
+
+}
+
+.entry-title img{
+    height:200px;
+    width:auto;
 }
 .about-us {
     background: url(images/about-us-background.jpg) no-repeat;
@@ -2474,12 +2476,33 @@ body {
     margin-top: 250px;
     margin-bottom: 60px;
     border-color: white;
-    border-style: dashed;
+    border-style: solid ;
     padding: 10px;
-
-    animation: alternate 
 }
-
+.about_area .about_info p:hover{
+    animate: animate 2s forwards;
+}
+@keyframes animate{
+    0%{
+        border-top-color: white;
+         border-left-color: transparent;
+          border-bottom-color: transparent;
+    }
+    50%{
+        
+        border-top-color: transparent;
+         border-left-color: white;
+          border-bottom-color: transparent;
+    
+    }
+    100%{
+        
+        border-top-color: transparent;
+         border-left-color: transparent;
+          border-bottom-color: white;
+    
+    }
+}
 @media (max-width: 767px) {
     .about_area .about_info p {
         margin-bottom: 30px;
@@ -2493,7 +2516,7 @@ body {
 .about_area .section_title{
     position: absolute;
     top:-200px;
-    left:20%;
+    left:30%;
     color: black;
     z-index: 999;
 }
@@ -2513,7 +2536,7 @@ color: white;
  }   
 .about_area .section_title{
    
-    top:-300px;
+    top:-400px;
     left:0px
 }
 .about_area .section_title h3{
@@ -2615,56 +2638,15 @@ color: white;
     background-color: transparent;
     border-color: orange;
     color:white;
+    display:block;
+    margin:auto;
 }
 .btn-outline-warning:hover{
     background-color: orange;
 }
 
 
-.patterns {
-  height: 100vh;
-  width: 100vw;
-  display:block;
-  margin:auto;
-}
 
-
-
-svg text {
-  font-family: Roboto;
-  letter-spacing: 10px;
-  stroke: #ffa5d8;
-  font-size: 100px;
-  font-weight: 700;
-  stroke-width: 3;
- 
-  animation: textAnimate 5s infinite alternate;
-  
-}
-
-@keyframes textAnimate {
-  0% {
-    stroke-dasharray: 0 50%;
-    stroke-dashoffset:  20%;
-    fill:hsl(189, 68%, 75%)
-
-  }
-  
-  100% {
-    stroke-dasharray: 50% 0;
-    stroke-dashoffstet: -20%;
-    fill: hsla(189, 68%, 75%,0%)
-  }
-  
-}
-@media screen and (max-width:992px){
-    svg text{
-        font-size: 100px;
-        font-weight: 700;
-    }
-}
-
-/* events */
 .lineup-artists-wrap{
     position: relative;
     /* margin-bottom: 70%; */
@@ -2788,3 +2770,47 @@ svg text {
   flex-direction: column;
 
 }  
+
+
+.patterns {
+  height: 100vh;
+  width: 100vw;
+  display:block;
+  margin:auto;
+}
+
+
+
+svg text {
+  font-family: Roboto;
+  letter-spacing: 10px;
+  stroke: #ffa5d8;
+  font-size: 100px;
+  font-weight: 700;
+  stroke-width: 3;
+ 
+  animation: textAnimate 5s infinite alternate;
+  
+}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset:  20%;
+    fill:hsl(189, 68%, 75%)
+
+  }
+  
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: hsla(189, 68%, 75%,0%)
+  }
+  
+}
+@media screen and (max-width:992px){
+    svg text{
+        font-size: 100px;
+        font-weight: 700;
+    }
+}
