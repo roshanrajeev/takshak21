@@ -1116,14 +1116,21 @@ body {
     background-size: cover;
 }
 .hero-content img{
-   height: 60vh;
-   width:60vw;
+   height:40vh;
+   width:40vw;
     display: block;
     margin:auto;
     margin-top:150px;
     box-shadow:white;
     
 }
+@media screen and (max-width:992px) {
+    .hero-content img{
+
+    }
+}
+
+
 .hero-content button{
     display: block;
     margin:auto;
@@ -2470,30 +2477,7 @@ body {
     border-style: solid none solid solid;
     padding: 10px;
 }
-.about_area .about_info p:hover{
-    animate: animate 2s forwards;
-}
-@keyframes animate{
-    0%{
-        border-top-color: white;
-         border-left-color: transparent;
-          border-bottom-color: transparent;
-    }
-    50%{
-        
-        border-top-color: transparent;
-         border-left-color: white;
-          border-bottom-color: transparent;
-    
-    }
-    100%{
-        
-        border-top-color: transparent;
-         border-left-color: transparent;
-          border-bottom-color: white;
-    
-    }
-}
+
 @media (max-width: 767px) {
     .about_area .about_info p {
         margin-bottom: 30px;
