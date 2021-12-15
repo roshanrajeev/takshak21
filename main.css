@@ -1397,7 +1397,11 @@ body {
     width: 100%;
     font-size: 48px;
     font-weight: 600;
+<<<<<<< HEAD
     color: white;
+=======
+    color:#ffffff;
+>>>>>>> d6668de56109e34ce88993c40eaadf135f706e2f
 }
 .lineup-artists {
     padding-top: 80px;
@@ -2786,6 +2790,7 @@ color: white;
 }
 
 
+<<<<<<< HEAD
 .patterns {
   height: 100vh;
   width: 100vw;
@@ -2830,6 +2835,8 @@ svg text {
 }
 
 /* events */
+=======
+>>>>>>> d6668de56109e34ce88993c40eaadf135f706e2f
 .lineup-artists-wrap{
     position: relative;
     /* margin-bottom: 70%; */
