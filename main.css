@@ -2540,7 +2540,10 @@ color: white;
     left:0px
 }
 .about_area .section_title h3{
-    font-size:60px;
+    font-size:50px;
+}
+svg text{
+    font-size:30px;
 }
 }
 
