@@ -1207,10 +1207,10 @@ body {
     color: hsl(0, 0%, 0%);
 }
 .content-section {
-    min-height: 4640px;
+    height: 100%;
     width: 100%;
     padding-bottom: 120px;
-    background: url(images/middle-cover.jpg) no-repeat;
+    /* background: url(images/middle-cover.jpg) no-repeat; */
     background-size: 100% auto;
 }
 .content-section .middle-cover {
@@ -1234,7 +1234,7 @@ body {
     width: 100%;
     font-size: 48px;
     font-weight: 600;
-    color: hsl(0, 0%, 0%);
+    color: white;
 }
 .lineup-artists {
     padding-top: 80px;
@@ -2470,12 +2470,14 @@ body {
     font-size: 16px;
     font-weight: 100;
     line-height: 28px;
-    color: gray;
+    color: white;
     margin-top: 250px;
     margin-bottom: 60px;
     border-color: white;
-    border-style: solid none solid solid;
+    border-style: dashed;
     padding: 10px;
+
+    animation: alternate 
 }
 
 @media (max-width: 767px) {
@@ -2490,8 +2492,8 @@ body {
 }
 .about_area .section_title{
     position: absolute;
-    top:-20px;
-    left:70%;
+    top:-200px;
+    left:20%;
     color: black;
     z-index: 999;
 }
@@ -2511,7 +2513,7 @@ color: white;
  }   
 .about_area .section_title{
    
-    top:-40px;
+    top:-300px;
     left:0px
 }
 .about_area .section_title h3{
@@ -2617,3 +2619,172 @@ color: white;
 .btn-outline-warning:hover{
     background-color: orange;
 }
+
+
+.patterns {
+  height: 100vh;
+  width: 100vw;
+  display:block;
+  margin:auto;
+}
+
+
+
+svg text {
+  font-family: Roboto;
+  letter-spacing: 10px;
+  stroke: #ffa5d8;
+  font-size: 100px;
+  font-weight: 700;
+  stroke-width: 3;
+ 
+  animation: textAnimate 5s infinite alternate;
+  
+}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset:  20%;
+    fill:hsl(189, 68%, 75%)
+
+  }
+  
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: hsla(189, 68%, 75%,0%)
+  }
+  
+}
+@media screen and (max-width:992px){
+    svg text{
+        font-size: 100px;
+        font-weight: 700;
+    }
+}
+
+/* events */
+.lineup-artists-wrap{
+    position: relative;
+    /* margin-bottom: 70%; */
+    padding-bottom: 2%;
+    padding-right: 2%;
+    margin: 4%; 
+    display: flex;
+    flex-direction: row;
+  }
+
+  .lineup-artists-wrap span {
+    background-color:#ffffff;
+    position: absolute;
+  }
+
+  .top-border {
+    top: 0;
+    left: -5vh;
+    width: 10vw;
+    height: 0.1rem;
+  }
+
+  .left-border {
+    top: -5vh;
+    left: -2vh;
+    height: 10vw;
+    width: 0.1rem;
+  }
+
+  .right-border {
+    bottom: -5vh;
+    right: 0;
+    height: 100%;
+    width: 0.1rem;
+  }
+
+  .bottom-border {
+    bottom: 0;
+    right: -5vh;
+    width: 75%;
+    height: 0.1rem;
+  }
+
+  .telep {
+      padding: 4%;
+      display: inline;
+
+  }
+
+.event-67content{
+    margin-top: 4%;
+}
+
+.lineup-artists-wrap .swipe .event-67content{
+    padding: 2%;
+    padding-left: 5%;
+
+}
+
+.lineup-artists-wrap{
+    margin-left: 10%;
+}
+
+
+
+
+/* right box */
+
+.top-border-2 {
+    top: 0;
+    right: -5vh;
+    width: 10vw;
+    height: 0.1rem;
+  }
+
+  .left-border-2 {
+    bottom: -5vh;
+    left: -2.5vh;
+    height: 100%;
+    width: 0.1rem;
+  }
+
+  .right-border-2 {
+    top: -5vh;
+    right: 0;
+    height:20vh;
+    width: 0.1rem;
+  }
+
+  .bottom-border-2 {
+    bottom: 1vh;
+    left: -10vh;
+    width: 80%;
+    height: 0.1rem;
+  }
+
+
+
+
+
+
+
+
+
+
+/* ---------- */
+
+.lineup-artists-wrap.swipe{
+    margin-left: 20%;
+    margin-right: 4%;
+}
+
+.lineup-artists-wrap{
+    margin-right: 20%;
+    padding: 1%;
+  
+}
+
+.lineup-artists{
+  display: flex;
+  flex-direction: column;
+
+}  
