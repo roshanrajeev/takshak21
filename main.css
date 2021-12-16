@@ -1323,7 +1323,9 @@ body {
     margin: 0;
     font-size: 48px;
     font-weight: 600;
-    color: hsl(0, 0%, 0%);
+    color: #fff;
+    text-align: center;
+    font-family: 'Roboto' ,sans-serif;
 }
 .the-complete-lineup-artists {
     position: relative;
