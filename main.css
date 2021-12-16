@@ -1227,7 +1227,9 @@ body {
     width: 100%;
     font-size: 48px;
     font-weight: 600;
-    color: hsl(0, 0%, 0%);
+    color:white;
+    display: block;
+    margin-left:40%;
 }
 .lineup-artists {
     padding-top: 80px;
@@ -1323,12 +1325,16 @@ body {
     margin: 0;
     font-size: 48px;
     font-weight: 600;
-    color: hsl(0, 0%, 0%);
+    color: #fff;
+    text-align: center;
+    font-family: 'Roboto' ,sans-serif;
 }
 .the-complete-lineup-artists {
     position: relative;
     margin-top: 110px;
     height: auto;
+    margin-bottom: 110px;
+
 }
 .the-complete-lineup-artists .artist-single {
     margin-bottom: 0;
@@ -1351,6 +1357,12 @@ body {
     height: auto;
     width: 255px;
 }
+.the-complete-lineup-artists .artist-single .featured-image img:hover{
+        -ms-transform:scale(1.2);
+        -webkit-transform:scale(1.2);
+        transform:scale(1.2);
+        
+}
 .the-complete-lineup-artists .artist-single .featured-image a {
     display: block;
 }
@@ -1361,6 +1373,34 @@ body {
     color: hsl(0, 0%, 2%);
     text-align: center;
 }
+
+
+.the-complete-lineup-artists .artist-single h2 {
+    margin-top: 38px;
+    font-size: 24px;
+    text-align: center;
+    z-index: 1;
+    
+}
+.the-complete-lineup-artists .artist-single h2 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    
+  }
+
+  .the-complete-lineup-artists .artist-single h2:hover{
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transform: translate3d(-50%,-50%,0) scale3d(0.8,0.8,1);
+        transform: translate3d(-50%,-50%,0) scale3d(0.8,0.8,1);
+      
+  }
+
 @media screen and (min-width:768px) {
     .the-complete-lineup-artists .artist-single: nth-child(6)  {
     margin-top: 0;
@@ -2516,7 +2556,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(249,70,0,0.9696253501
 .about_area .section_title{
     position: absolute;
     top:-200px;
-    left:30%;
+    left:20%;
     color: black;
     z-index: 999;
 }
@@ -2538,6 +2578,9 @@ color: white;
    
     top:-400px;
     left:0px
+}
+.about_area .section_title text{
+font-size: 80px;
 }
 .about_area .section_title h3{
     font-size:50px;
