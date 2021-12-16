@@ -1381,6 +1381,13 @@ body {
     font-weight: 700;
     
   }
+  .the-complete-lineup-artists .artist-single h2:hover{
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transform: translate3d(-50%,-50%,0) scale3d(0.8,0.8,1);
+        transform: translate3d(-50%,-50%,0) scale3d(0.8,0.8,1);
+      
+  }
 
 @media screen and (min-width:768px) {
     .the-complete-lineup-artists .artist-single: nth-child(6)  {
