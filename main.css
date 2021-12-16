@@ -1363,6 +1363,25 @@ body {
     color: hsl(0, 0%, 2%);
     text-align: center;
 }
+
+.the-complete-lineup-artists .artist-single h2 {
+    margin-top: 38px;
+    font-size: 24px;
+    text-align: center;
+    z-index: 1;
+    
+}
+.the-complete-lineup-artists .artist-single h2 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    
+  }
+
 @media screen and (min-width:768px) {
     .the-complete-lineup-artists .artist-single: nth-child(6)  {
     margin-top: 0;
