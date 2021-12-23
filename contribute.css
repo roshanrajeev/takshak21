@@ -7,20 +7,21 @@
     
 }
 /*=============== ABOUT ===============*/
-.about__container{
+.contribute__container{
     row-gap: 2rem;
   }
   
-  .about__data{
-    text-align: center;
+  .contribute__data{
+    /* text-align: center; */
   }
   
-  .about__description{
-    margin-bottom: var(--mb-2);
+  .contribute__description{
+    /* margin-bottom: var(--mb-2); */
     text-align:justify;
+    margin-bottom: 30px;
   }
   
-  .about__img{
+  .contribute__img{
     width: 200px;
     justify-self: center;
   }
@@ -30,4 +31,39 @@
   .section__title {
     font-weight:600;
     /* font-family: 'Roboto Slab', serif; */
+  }
+
+  .contribute__title {
+    margin: 20px 0;
+  }
+
+  .contribute__description {
+    max-width: 800px;
+  }
+
+  .contribute__payment-card {
+    border: 3px solid white;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    max-width: 800px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+
+  .contribute__payment-card button {
+    background-color: orange;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+  }
+
+  .contribute__payment-card p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
   }
