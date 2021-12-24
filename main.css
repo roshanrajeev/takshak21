@@ -817,12 +817,6 @@ h3 {
 @page {
     size: a3;
 }
-body {
-    min-width: 992px !important;
-}
-.container {
-    min-width: 992px !important;
-}
 .table {
     border-collapse: collapse !important;
 }
@@ -1277,6 +1271,7 @@ body {
 .hero-content .img-container {
     max-width: 280px;
     width: 100%;
+    z-index: 1;
     /* width:60vw; */
     /* margin:auto; */
     /* margin-top:150px; */
@@ -1303,6 +1298,7 @@ body {
     /* max-width: 180px; */
     width: fit-content;
     margin: 0 auto;
+    z-index: 1;
 }
 
 .hero-content .button-container a {
@@ -1522,16 +1518,39 @@ body {
 }
 .the-complete-lineup-artists {
     position: relative;
-    margin-top: 110px;
     height: auto;
+    margin-top: 100px;
     margin-bottom: 110px;
 }
+
+@media (max-width: 762px) {
+    .the-complete-lineup-artists {
+        margin-top: 60px;
+    }   
+}
+
 .the-complete-lineup-artists .artist-single {
     margin-bottom: 0;
 }
 .the-complete-lineup-artists .artist-single:nth-of-type(even) {
     margin-top: 120px;
 }
+@media(max-width: 767px) {
+    .the-complete-lineup-artists .artist-single:nth-of-type(even) {
+        margin-top: 0;
+    }
+
+    .the-complete-lineup-artists .artist-single{
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    
+    .the-complete-lineup-artists .featured-image {
+        display: flex !important;
+        justify-content: center !important;
+    }
+}
+
 .the-complete-lineup-artists .artist-single figure {
     margin: 0;
     padding: 0;
@@ -1548,11 +1567,13 @@ body {
     max-width: 100%;
     height: auto;
     width: 255px;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
-.the-complete-lineup-artists .artist-single .featured-image img:hover {
-    -ms-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+.the-complete-lineup-artists .artist-single .featured-image:hover img{
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 .the-complete-lineup-artists .artist-single .featured-image a {
     display: block;
@@ -1563,6 +1584,8 @@ body {
     font-weight: 600;
     color: hsl(0, 0%, 2%);
     text-align: center;
+    cursor: pointer;
+    display: none;
 }
 
 .the-complete-lineup-artists .artist-single h2 {
@@ -2800,12 +2823,9 @@ body {
     z-index: 1000;
     line-height: 80px;
 }
-.about_area .section_title h3 {
-    font-style: bold italic;
-    font-weight: 900;
-    font-size: 100px;
-    color: white;
-    /* line-height: 234px; */
+
+
+.about_area .section_title p {
 }
 
 @media screen and (max-width: 992px) {
@@ -3364,15 +3384,19 @@ body {
 
 .btn-outline-warning {
     background-color: transparent;
-    border-color: orange;
     color: white;
     display: block;
     margin: auto;
-    /* border: 2px solid orange; */
+    /* border: 2px solid #ff6d00; */
     /* max-width: 180px; */
+    background-color: #ff6d00;
+    font-weight: bold;
+    font-style: italic;
+    color: #03070c;
 }
 .btn-outline-warning:hover {
     background-color: orange;
+    color: #03070c;
 }
 
 .lineup-artists-wrap {
