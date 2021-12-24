@@ -43,7 +43,7 @@
   }
 
   .contribute__payment-card {
-    border: 3px solid white;
+    border: 3px solid #e6e6e6;
     border-radius: 8px;
     padding: 10px;
     display: flex;
@@ -54,13 +54,15 @@
     justify-content: space-between;
   }
 
-  .contribute__payment-card button {
+  .contribute__payment-card a {
     background-color: orange;
     border-radius: 4px;
     outline: none;
     border: none;
     padding: 6px;
     cursor: pointer;
+    text-decoration: none;
+    color: #000;
   }
 
   .contribute__payment-card p {
