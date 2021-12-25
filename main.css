@@ -1526,7 +1526,7 @@ body {
 @media (max-width: 762px) {
     .the-complete-lineup-artists {
         margin-top: 60px;
-    }   
+    }
 }
 
 .the-complete-lineup-artists .artist-single {
@@ -1535,16 +1535,16 @@ body {
 .the-complete-lineup-artists .artist-single:nth-of-type(even) {
     margin-top: 120px;
 }
-@media(max-width: 767px) {
+@media (max-width: 767px) {
     .the-complete-lineup-artists .artist-single:nth-of-type(even) {
         margin-top: 0;
     }
 
-    .the-complete-lineup-artists .artist-single{
+    .the-complete-lineup-artists .artist-single {
         margin: 0 auto;
         margin-bottom: 50px;
     }
-    
+
     .the-complete-lineup-artists .featured-image {
         display: flex !important;
         justify-content: center !important;
@@ -1556,6 +1556,7 @@ body {
     padding: 0;
     width: 100%;
     overflow: hidden;
+    height: 320px;
 }
 .the-complete-lineup-artists .artist-single .box-link {
     position: absolute;
@@ -1569,8 +1570,11 @@ body {
     width: 255px;
     cursor: pointer;
     transition: all 0.2s ease;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
-.the-complete-lineup-artists .artist-single .featured-image:hover img{
+.the-complete-lineup-artists .artist-single .featured-image:hover img {
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
@@ -2015,6 +2019,7 @@ body {
 }
 .about-us .main-content .featured-image img {
     max-width: 100%;
+    object-fit: cover;
 }
 .about-us .hero-slider-images {
     margin-top: 110px;
@@ -2823,7 +2828,6 @@ body {
     z-index: 1000;
     line-height: 80px;
 }
-
 
 .about_area .section_title p {
 }
